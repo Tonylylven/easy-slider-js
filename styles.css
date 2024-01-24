@@ -1,0 +1,46 @@
+.slider-container {
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+img {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.prev,
+.next {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0; 
+    z-index: 10;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #e2e2e2;
+}
